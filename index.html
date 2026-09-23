@@ -1497,6 +1497,15 @@ function chineseNames(text){return String(text).replace(zhNameRe,m=>ZH_GAME_NAME
 const languageSources=new WeakMap();function localize(root){document.documentElement.lang=language==='ja'?'ja':'zh-CN';const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n;while(n=walker.nextNode()){if(n.parentElement.closest('script,style,[data-user-text]'))continue;const original=languageSources.get(n)??n.nodeValue;languageSources.set(n,original);n.nodeValue=language==='ja'?translate(original):chineseNames(original);}root.querySelectorAll('[title],[placeholder],[aria-label]').forEach(el=>{let original=languageSources.get(el);if(!original){original={};languageSources.set(el,original);}for(const k of ['title','placeholder','aria-label'])if(el.hasAttribute(k)){original[k]??=el.getAttribute(k);el.setAttribute(k,language==='ja'?translate(original[k]):chineseNames(original[k]));}});}
 </script><script>let state=initial(),picker=null,results=[],saveStatus='本地自动保存';
 try{const saved=JSON.parse(localStorage.getItem('pso2-equip-v1'));if(saved&&saved.v===1&&saved.skillSave&&saved.configs)state=migrateDefaults(saved);}catch{}
+// One-time migration: start existing builds with automatic character base stats.
+function resetLegacyBaseOverride(s){
+ if(!s||s.baseOverrideDefaultVersion===1)return;
+ s.baseOverride=false;
+ s.baseOverrideDefaultVersion=1;
+}
+resetLegacyBaseOverride(state);
+resetLegacyBaseOverride(state.portfolio?.base);
+for(const item of state.portfolio?.items||[])resetLegacyBaseOverride(item.data);
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=(n,d=0)=>Number(n).toLocaleString('zh-CN',{maximumFractionDigits:d,minimumFractionDigits:d});
 const setPath=(obj,path,v)=>{let keys=path.split('.'),p=obj;keys.slice(0,-1).forEach(k=>p=p[k]);p[keys.at(-1)]=v;};
