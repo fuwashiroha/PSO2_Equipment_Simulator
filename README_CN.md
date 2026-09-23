@@ -1,7 +1,7 @@
 # PSO2 配装模拟器
 
 [日本語](README.md) | 中文
-<img width="1951" height="1726" alt="image" src="https://github.com/user-attachments/assets/3f810f8a-62d4-44c0-ab5f-abf299409f3f" />
+<img width="1956" height="1719" alt="image" src="https://github.com/user-attachments/assets/39c30712-fe05-47ac-9277-8c221cc01615" />
 
 面向 PSO2 旧国的非官方配装与伤害模拟器，支持中日切换，可离线使用。
 
