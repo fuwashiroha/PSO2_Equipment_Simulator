@@ -1,7 +1,7 @@
 # PSO2 装備シミュレーター
 
 日本語 | [中文](README_CN.md)
-<img width="1864" height="1785" alt="image" src="https://github.com/user-attachments/assets/75364ae2-de8f-4450-93a5-f4719b29ec64" />
+<img width="1867" height="1784" alt="image" src="https://github.com/user-attachments/assets/aa569bd2-f7ef-48cd-9bba-793dc8b90965" />
 PSO2 クラシック向けの非公式装備・ダメージシミュレーター。日本語・中国語対応、オフラインで利用できます。
 
 ## 主な機能
