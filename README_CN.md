@@ -4,7 +4,8 @@
 
 面向 PSO2 旧国的离线配装与伤害模拟器。
 
-![模拟器界面](screenshots/zh-CN.png)
+<img width="1890" height="1655" alt="image" src="https://github.com/user-attachments/assets/d98f7954-9671-4a89-b680-09cc43092da8" />
+
 
 ## 主要功能
 
