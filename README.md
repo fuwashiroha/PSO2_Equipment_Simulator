@@ -4,7 +4,8 @@
 
 PSO2クラシック向けの、オフラインで使える装備・ダメージシミュレーターです。
 
-![シミュレーター画面](screenshots/ja.png)
+<img width="1890" height="1652" alt="image" src="https://github.com/user-attachments/assets/ecc28cc8-333d-4e69-82d7-0f567923b454" />
+
 
 ## 主な機能
 
