@@ -4,9 +4,6 @@
 
 PSO2クラシック向けの、オフラインで使える装備・ダメージシミュレーターです。
 
-<img width="1890" height="1652" alt="image" src="https://github.com/user-attachments/assets/ecc28cc8-333d-4e69-82d7-0f567923b454" />
-
-
 ## 主な機能
 
 - クラス・レベル、攻撃方法、敵防御力、部位倍率を設定。
